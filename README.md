@@ -57,7 +57,7 @@ The remainder of the settings are generally fine when left as-is. Advanced users
 
 After editing your configuration, simply run `./tangaracopy.py`
 
-As a quick test, you can use the `-c` flag, which will stop after that many files. For example `./tangaracopy.py` -c 50` will only copy 50 files to the destination.
+As a quick test, you can use the `-c` flag, which will stop after that many files. For example `./tangaracopy.py -c 50` will only copy 50 files to the destination.
 
 ## Known Issues
 
