@@ -25,7 +25,21 @@ The path of least resistance forward is, when copying to the Tangara SD card, co
 
 ## Configuring
 
-Copy `config-example.py` to `config.py`. 
+Copy `config-example.py` to `config.py`. It looks a little something like this:
+
+```
+FOLDERS = {
+    "/Volumes/Plex/Music/": "/Volumes/Tangara/Media/Music"
+}
+EXTENSIONS_COPY = [
+    '.mp3'
+]
+EXTENSIONS_TRANSCODE = [
+    '.m4a'
+]
+FFMPEG_GLOBAL_OPTIONS = ["-hide_banner", "-loglevel", "error"]
+FFMPEG_ENCODE_OPTIONS = ["-b:a", "192k"]
+```
 
 The main item in the config you should edit is:
 
